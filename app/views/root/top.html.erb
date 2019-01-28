@@ -1,38 +1,34 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-  <title>Ginza Sony Park</title>
-</head>
-
 <body>
-  <header>
-    <div class="header-container">
-      <ul class="header-list clearfix">
-        <li class="header-text">Home</li>
-        <li class="header-text">History</li>
-        <li class="header-text">Floors</li>
-        <li class="header-text">Contents</li>
-        <li class="header-text">Comments</li>
-        <li class="header-text">Staffs</li>
-        <li class="header-text">Maps</li>
-      </ul>
-    </div>
-  </header>
 
   <div class="main-visual">
-    <h1 class="main-visual-text">Ginza Sony Park</h1>
+    <div class="main-vi-tr">
+      <div class="main-vi-container">
+        <div class="main-vi-title">
+          <h1 class="main-vi-title-text">Ginza Sony Park</h1>
+        </div>
+        <div class="main-vi-body">
+          <h2 class="main-vi-body-text">あなたはどんなストーリーに出会いましたか？</h2>
+          <!-- <h2 class="main-vi-body-text">あなたはどんなストーリーに<br>出会うことができましたか？</h2> -->
+          <h4 class="main-vi-body-date">| 2018.8.9 ~ 2020.X.X |</h4>
+          <div class="main-vi-login">
+            <%= link_to "パークのメンバーになる", new_user_registration_path, class: "" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-notice">
+    <p class="main-no-text">　　　ここにお知らせとか天気とかいろんなコメントを流しておけるようにしたらいいんじゃないでしょうか・・・</p>
   </div>
 
   <div class="history">
+    <div class="history-tr">
+      <div class="history-container">
+        <div class="">
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="Floors">
@@ -50,7 +46,4 @@
   <div class="maps">
   </div>
 
-  <footer>
-  </footer>
 </body>
-</html>

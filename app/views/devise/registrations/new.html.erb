@@ -1,29 +1,36 @@
-<h2>Sign up</h2>
+<div style="margin: 100px">
+  <h2 class="field-text">GSP1820のメンバーになる！</h2>
+  <h2 class="field-text">Sign up for GSP1820</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="field field-text">
+    <%= f.label :あなたのお名前： %>
+    <%#= f.label :name %><br />
+    <%= f.email_field :name, autofocus: true, autocomplete: "name" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
+  <div class="field field-text">
+    <%= f.label :パスワード %>
+    <%#= f.label :password %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(<%= @minimum_password_length %>文字以上<!--  characters minimum -->)：</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
+  <div class="field field-text">
+    <%= f.label :パスワード再確認： %>
+    <%#= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-  <div class="actions">
+  <div class="actions field-text">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>

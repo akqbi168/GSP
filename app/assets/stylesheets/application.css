@@ -19,15 +19,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Courier;
+    font-family: Courier, monospace, 'Hiragino Sans', sans-serif;
     /*Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif*/
     /*border: 1px solid red;*/
+}
+
+a {
+    text-decoration: none;
 }
 
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
+}
+.field-text {
+    padding: 0 0 15px;
+
 }
 
 
@@ -38,29 +46,130 @@ header {
     height: 70px;
 }
 .header-container {
-    width: 1024px;
+    width: 90%;
     margin: 0 auto;
-    text-align: center;
+    line-height: 70px;
 }
 .header-list {
     list-style: none;
-    line-height: 70px;
-    margin: 0 auto;
-    float: left;
 }
 .header-text {
-    color: #FAFAFA;
-    size: 16px;
-    margin: 0 30px;
+    color: #CCCCCC;
+    font-size: 18px;
+    padding: 0 30px;
     float: left;
 }
 
 /* main-visual */
 .main-visual {
     width: 100%;
-    height: 360px;
+    height: 720px;
     background-image: url(main-visual.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    filter: brightness(200%);
+    filter: contrast(110%);
+}
+.main-vi-tr {
+    height: 100%;
+    background: rgba(255,245,235,0.2);
+}
+.main-vi-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.main-vi-title {
+    height: 50%;
+    color: #DDD;
+}
+.main-vi-title-text {
+    font-size: 120px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-family: 'arial';
+    filter: drop-shadow(5px 5px 5px rgba(115,66,41,0.2));
+}
+.main-vi-body {
+    height: 50%;
+}
+.main-vi-body-text {
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-family: 'Hiragino Sans';
+}
+.main-vi-body-date {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+.main-vi-login {
+    font-size: 13px;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    border: 2px;
+
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5989cf;
+    background: #c6e4ff;
+    border-bottom: solid 6px #aac5de;
+    border-radius: 9px;
+}
+
+
+.main-notice {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    display: none;
+}
+.main-no-text {
+    font-size: 18px;
+    color: #AAA;
+    font-family: monospace;
+    line-height: 50px
+}
+
+
+/* history */
+.history {
+    width: 100%;
+    height: 720px;
+    background-image: url(sonybuildinghistory.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.history-tr {
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+}
+.history-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.history-main-visual-title {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+
+/* Floors */
+
+
+
+
+
+
+
+
+
+.history-backimg {
+
 }

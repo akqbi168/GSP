@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ginza Sony Park 2018-2020</title>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+
+  <title>GSP 18-20</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <ul class="header-list clearfix">
+        <%= link_to "Home", root_path, class: "header-text" %>
+        <%= link_to "History", history_path, class: "header-text" %>
+        <%= link_to "Floors", '/', class: "header-text" %>
+        <%= link_to "Contents", '/', class: "header-text" %>
+        <%= link_to "Comments", '/', class: "header-text" %>
+        <%= link_to "Staffs", '/', class: "header-text" %>
+        <%= link_to "Maps", '/', class: "header-text" %>
+      </ul>
+    </div>
+  </header>
+
+  <%= yield %>
+
+  <footer>
+  </footer>
+
+</body>
 
 
-
-
-  <body>
-    <%= yield %>
-  </body>
 </html>
+
+
+
+
+
+
