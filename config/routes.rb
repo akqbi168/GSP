@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   root 'root#top'
   get '/history' => 'root#history'
+  get '/floors' => 'root#floors'
 
 end
 

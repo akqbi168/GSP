@@ -28,6 +28,9 @@
 a {
     text-decoration: none;
 }
+li {
+    display: inline;
+}
 
 .clearfix::after {
     content: "";
@@ -46,7 +49,8 @@ header {
     width: 100%;
     /*height: 70px;*/
     height: 8vh;
-    z-index: -1;
+    position: fixed;
+    z-index: 999;
 }
 .header-container {
     width: 90%;
@@ -65,6 +69,26 @@ header {
     float: left;
 }
 
+/* footer */
+footer {
+    background-color: #000000;
+    width: 100%;
+    height: 6vh;
+}
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 6vh;
+}
+.footer-text {
+    color: #CCCCCC;
+    font-size: 1.5vh;
+    padding: 0 30px;
+    float: right;
+}
+
+
+
 /* main-visual */
 .main-visual {
     width: 100%;
@@ -73,16 +97,16 @@ header {
     background-image: url(main-visual.jpg);
     background-size: cover;
     background-position: center;
-    filter: brightness(200%);
+    filter: brightness(220%);
     filter: contrast(110%);
 }
 .main-vi-tr {
     height: 100%;
-    background: rgba(255,245,235,0.4);
+    background: rgba(235,235,225,0.5);
 }
 .main-vi-container {
     width: 80%;
-    height: 100%;
+    height: 92vh;
     margin: 0 auto;
 }
 .main-vi-title {
@@ -97,25 +121,27 @@ header {
     top: 40%;
     font-family: 'arial';
     /*filter: drop-shadow(10px 10px 10px rgba(115,66,41,0.2));*/
-    filter: drop-shadow(10px 10px 10px rgba(115,66,41,0.4));
+    filter: drop-shadow(8px 8px 5px rgba(245,245,245,0.4));
 }
 .main-vi-body {
-    height: 50%;
+    height: 50vh;
 }
 .main-vi-body-text {
     /*font-size: 28px;*/
-    font-size: 4vh;
+    font-size: 4.5vh;
     text-align: center;
     position: relative;
     top: 3%;
     font-family: 'Hiragino Sans';
-    filter: drop-shadow(10px 10px 10px rgba(45,160,45,0.2));
+    filter: drop-shadow(10px 10px 10px rgba(245,245,245,0.4));
 }
 .main-vi-body-date {
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 3.5vh;
     text-align: center;
     position: relative;
-    top: 10%;
+    top: 7%;
+    filter: drop-shadow(10px 10px 10px rgba(245,245,245,0.4));
 }
 .main-vi-login {
     font-size: 13px;
@@ -130,6 +156,127 @@ header {
     background: #c6e4ff;
     border-bottom: solid 6px #aac5de;
     border-radius: 9px;
+}
+
+
+/* Floors */
+.floors {
+    width: 100%;
+    /*height: 720px;*/
+    height: 92vh;
+    background-color: #F5F5F5 ;
+}
+.fl-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 26vh 0;
+}
+.fl-left {
+    width: 46vh;
+    height: 40vh;
+    float: left;
+    border-radius: 25%;
+    padding: 5vh;
+    border: 1px solid #777;
+    /*position: relative;*/
+    /*top: 40vh;*/
+}
+.fl-img {
+    width: 36vh;
+    height: 30vh;
+    background-image: url(gl_pc.png);
+    background-size: cover;
+    background-position: right;
+
+    position: absolute;
+    margin: auto;
+}
+.fl-right {
+    width: 60%;
+    height: 40vh;
+    background-color: white;
+    float: right;
+}
+.fl-right-text {
+    font-size: 24px;
+    font-color: #AAA;
+    font-family: 'Hiragino Gothic';
+    line-height: 36px;
+    padding: 20px 0;
+}
+.fl-right-text-link {
+    font-size: 24px;
+    font-color: #AAA;
+    line-height: 36px;
+    padding: 20px 16vh;
+}
+
+
+/* Contents */
+.contents {
+    width: 100%;
+    /*height: 720px;*/
+    height: 92vh;
+    background-image: url(contents.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.co-tr {
+    height: 100%;
+    background: rgba(255,255,255,0.7);
+}
+.co-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 26vh 0;
+}
+
+
+/* Voices */
+.voices {
+    width: 100%;
+    /*height: 720px;*/
+    height: 92vh;
+    background-color: #F5F5F5 ;
+}
+.vo-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 26vh 0;
+}
+
+
+/* Staffs */
+.staffs {
+    width: 100%;
+    /*height: 720px;*/
+    height: 92vh;
+    background-image: url(contents.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.st-tr {
+    height: 100%;
+    background: rgba(255,255,255,0.7);
+}
+.st-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 26vh 0;
+}
+
+
+/* Maps */
+.maps {
+    width: 100%;
+    /*height: 720px;*/
+    height: 92vh;
+    background-color: #F5F5F5 ;
+}
+.ma-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 26vh 0;
 }
 
 
@@ -154,23 +301,4 @@ header {
 .history-main-visual-title {
     font-size: 50px;
     font-family: sans-serif;
-}
-
-
-/* Floors */
-.floors {
-    width: 100%;
-    /*height: 720px;*/
-    height: 92vh;
-}
-
-
-
-
-
-
-
-
-.history-backimg {
-
 }

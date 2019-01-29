@@ -1,15 +1,16 @@
-<body>
+<body class="clearfix">
   <div class="main-visual">
     <div class="main-vi-tr">
-      <div class="main-vi-container">
+      <div class="main-vi-container clearfix">
         <div class="main-vi-title">
           <h1 class="main-vi-title-text">Ginza Sony Park</h1>
         </div>
         <div class="main-vi-body">
+          <!-- <h2 class="main-vi-body-text">あなたはどんなストーリーを見つけましたか？</h2> -->
           <h2 class="main-vi-body-text">あなたはどんなストーリーに出会いましたか？</h2>
           <!-- <h2 class="main-vi-body-text">あなたはどんなストーリーに<br>出会うことができましたか？</h2> -->
           <h4 class="main-vi-body-date">| 2018.8.9 ~ 2020.X.X |</h4>
-          <div class="main-vi-login">
+          <div class="main-vi-login" style="display:none">
             <%= link_to "パークのメンバーになる", new_user_registration_path, class: "" %>
           </div>
         </div>
@@ -18,32 +19,61 @@
   </div>
 
   <div class="floors">
-    <div class="floors-container">
+    <div class="fl-container clearfix">
+      <div class="fl-left">
+        <div class="fl-img">
+        </div>
+      </div>
+      <div class="fl-right">
+        <h3 class="fl-right-text">地上階から地下4階までの5フロアで構成されています。</h3>
+        <h3 class="fl-right-text">フロアごとにテイストや展示内容、パートナーが異なります。</h3>
+        <h3 class="fl-right-text">あなたのお気に入りの場所を探しにいきましょう。</h3>
+        <ul class="fl-right-text-link">
+          <li><%= link_to "GL(地上階)", '' %> |</li>
+          <li><%= link_to "B1", '' %>　|</li>
+          <li><%= link_to "B2", '' %>　|</li>
+          <li><%= link_to "B3", '' %>　|</li>
+          <li><%= link_to "B4", '' %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="contents">
+    <div class="co-tr">
+      <div class="co-container clearfix">
+      </div>
+    </div>
+  </div>
+
+  <div class="voices">
+    <div class="vo-container clearfix">
+      <div class="">
+      </div>
+    </div>
+  </div>
+
+  <div class="staffs">
+    <div class="st-container clearfix">
+      <div class="">
+      </div>
+    </div>
+  </div>
+
+  <div class="maps">
+    <div class="ma-container clearfix">
+      <div class="">
+      </div>
     </div>
   </div>
 
   <div class="history">
     <div class="history-tr">
-      <div class="history-container">
+      <div class="history-container clearfix">
         <div class="">
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="Floors">
-  </div>
-
-  <div class="contents">
-  </div>
-
-  <div class="comments">
-  </div>
-
-  <div class="staffs">
-  </div>
-
-  <div class="maps">
   </div>
 
 </body>
