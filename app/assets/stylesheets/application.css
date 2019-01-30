@@ -64,9 +64,15 @@ header {
 .header-text {
     color: #CCCCCC;
     /*font-size: 18px;*/
-    font-size: 2.5vh;
-    padding: 0 30px;
+    font-size: 2.4vh;
+    padding: 0 3vh;
     float: left;
+}
+.header-session {
+    color: #CCC;
+    font-size: 2vh;
+    padding: 0 2vh;
+    float: right;
 }
 
 /* footer */
@@ -194,21 +200,21 @@ footer {
 .fl-right {
     width: 60%;
     height: 40vh;
-    background-color: white;
+    /*background-color: white;*/
     float: right;
 }
 .fl-right-text {
-    font-size: 24px;
+    font-size: 3vh;
     font-color: #AAA;
     font-family: 'Hiragino Gothic';
-    line-height: 36px;
-    padding: 20px 0;
+    line-height: 4.5vh;
+    padding: 2.4vh 0;
 }
 .fl-right-text-link {
-    font-size: 24px;
+    font-size: 3vh;
     font-color: #AAA;
-    line-height: 36px;
-    padding: 20px 16vh;
+    line-height:4.5vh;
+    padding: 2.4vh 12vh;
 }
 
 
@@ -251,8 +257,8 @@ footer {
     width: 100%;
     /*height: 720px;*/
     height: 92vh;
-    background-image: url(contents.jpg);
-    background-size: cover;
+    background-image: url(bg-img.png);
+    background-size: contain;
     background-position: center;
 }
 .st-tr {
@@ -280,11 +286,19 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
 /* history */
 .history {
     width: 100%;
     /*height: 720px;*/
-    height: 92vh;
+    height: 86vh;
     background-image: url(sonybuildinghistory.jpg);
     background-size: cover;
     background-position: center;

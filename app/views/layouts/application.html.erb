@@ -24,6 +24,13 @@
         <li><%= link_to "Staffs", '/', class: "header-text" %></li>
         <li><%= link_to "Maps", '/', class: "header-text" %></li>
         <li><%= link_to "History", history_path, class: "header-text" %></li>
+<!--       </ul>
+      <ul class="header-session"> -->
+        <% if user_signed_in? %>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "header-text header-session" %></li>
+        <% else %>
+          <li class="circle" style="border-radius=50%""><%= link_to "Login", new_user_session_path, class: "header-text header-session" %></li>
+        <% end %>
       </ul>
     </div>
   </header>
