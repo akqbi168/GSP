@@ -68,3 +68,5 @@ gem 'devise'
 gem "jquery-rails"
 
 # Bootstrap 導入
+# gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'jquery-rails'

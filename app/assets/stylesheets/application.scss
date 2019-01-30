@@ -23,6 +23,11 @@
     font-family: Courier, monospace, 'Hiragino Sans', sans-serif;
     /*Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif*/
     /*border: 1px solid red;*/
+
+    /*縦方向はスクロール可*/
+    /*overflow-y: hidden;*/
+    /*横方向はスクロール不可*/
+    /*overflow-x: hidden;*/
 }
 
 a {
@@ -108,7 +113,7 @@ footer {
 }
 .main-vi-tr {
     height: 100%;
-    background: rgba(235,235,225,0.5);
+    background: rgba(235,235,225,0.55);
 }
 .main-vi-container {
     width: 80%;
@@ -175,7 +180,13 @@ footer {
 .fl-container {
     width: 80%;
     margin: 0 auto;
-    padding: 26vh 0;
+    padding: 12vh 0;
+}
+.fl-title {
+    font-size: 12vh;
+    text-align: center;
+    font-family: 'Hiragino Sans';
+    padding-bottom: 2vh;
 }
 .fl-left {
     width: 46vh;
@@ -183,7 +194,7 @@ footer {
     float: left;
     border-radius: 25%;
     padding: 5vh;
-    border: 1px solid #777;
+    border: 2px solid #777;
     /*position: relative;*/
     /*top: 40vh;*/
 }
@@ -201,21 +212,53 @@ footer {
     width: 60%;
     height: 40vh;
     /*background-color: white;*/
+    font-size: 3vh;
+    line-height: 9vh;
+    padding: 2.4vh 0;
     float: right;
 }
 .fl-right-text {
     font-size: 3vh;
     font-color: #AAA;
     font-family: 'Hiragino Gothic';
-    line-height: 4.5vh;
-    padding: 2.4vh 0;
 }
 .fl-right-text-link {
-    font-size: 3vh;
-    font-color: #AAA;
-    line-height:4.5vh;
-    padding: 2.4vh 12vh;
+    font-size: 4.5vh;
+    padding: 0 1.2vh;
+    margin: 0 0.4vh;
+    color: black;
+    border: 2px solid;
+    border-radius: 15%;
 }
+.fl-gl {
+    border-color: #2E8B57;
+    background-color: #32CD32;
+    margin-left: 5vh;
+}
+.fl-b1 {
+    border-color: #696969;
+    background-color: #DCDCDC;
+}
+.fl-b2 {
+    border-color: #4169E1;
+    background-color: #00BFFF;
+}
+.fl-b3 {
+    border-color: #FF4500;
+    background-color: #FF6347;
+}
+.fl-b4 {
+    border-color: #FF8C00;
+    background-color: #FFA500;
+}
+
+
+.floor-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 12vh 0;
+}
+
 
 
 /* Contents */

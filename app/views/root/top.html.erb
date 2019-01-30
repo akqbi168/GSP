@@ -20,6 +20,9 @@
 
   <div class="floors">
     <div class="fl-container clearfix">
+      <h2 class="fl-title">
+        Floors
+      </h2>
       <div class="fl-left">
         <div class="fl-img">
         </div>
@@ -28,12 +31,12 @@
         <h3 class="fl-right-text">地上階から地下４階までの５フロアで構成されています。</h3>
         <h3 class="fl-right-text">フロアごとに展示内容やパートナーが大きく異なります。</h3>
         <h3 class="fl-right-text">さぁ、あなたのお気に入りの場所を探しにいきましょう。</h3>
-        <ul class="fl-right-text-link">
-          <li><u><%= link_to "GL", '' %></u><!-- <h6 style="display:inline"> --><small> (地上)</small><!-- </h6> --> |</li>
-          <li><%= link_to "B1", '' %>　|</li>
-          <li><%= link_to "B2", '' %>　|</li>
-          <li><%= link_to "B3", '' %>　|</li>
-          <li><%= link_to "B4", '' %></li>
+        <ul>
+          <li><%= link_to "GL", '', class: "fl-right-text-link fl-gl" %><!-- <h6 style="display:inline"> --><!-- <small> (地上)</small> --><!-- </h6> --> |</li>
+          <li><%= link_to "B1", '', class: "fl-right-text-link fl-b1" %>　|</li>
+          <li><%= link_to "B2", '', class: "fl-right-text-link fl-b2" %>　|</li>
+          <li><%= link_to "B3", '', class: "fl-right-text-link fl-b3" %>　|</li>
+          <li><%= link_to "B4", '', class: "fl-right-text-link fl-b4" %></li>
         </ul>
       </div>
     </div>

@@ -29,7 +29,7 @@
         <% if user_signed_in? %>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "header-text header-session" %></li>
         <% else %>
-          <li class="circle" style="border-radius=50%""><%= link_to "Login", new_user_session_path, class: "header-text header-session" %></li>
+          <li class="circle" style="border-radius=50%"><%= link_to "Login", new_user_session_path, class: "header-text header-session" %></li>
         <% end %>
       </ul>
     </div>
@@ -41,7 +41,7 @@
 
   <footer>
     <div class="footer-container footer-fixed">
-      <p class="footer-text">(C) 2019 GSP1820 All rights reserved. Operated by GSP1820 Committee.</p>
+      <p class="footer-text"><strong>(C) 2019 GSP1820 All rights reserved. Produced by GSP1820 Committee.</strong></p>
     </div>
   </footer>
 
